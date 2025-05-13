@@ -25,5 +25,7 @@ public class Controller {
         return ResponseEntity.ok(request.getNum1() * request.getNum2());
     }
     @PostMapping("/division")
-    public ResponseEntity<Integer> division(@RequestBody Request request){}
+    public ResponseEntity<Integer> division(@RequestBody Request request){
+        return ResponseEntity.ok(request.getNum1() / request.getNum2());
+    }
 }
